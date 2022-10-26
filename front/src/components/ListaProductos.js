@@ -16,9 +16,10 @@ const ListaProductos = () => {
                                         <div className='rating-inner'></div>
                                     </div>
                                     <span id="No_de_opiniones"> 5 reviews</span>
+                                    <p className='stock'>10 ítems disponibles</p>
                                 </div>
                                 <p className='card-text'>$72.000</p><a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
-                                    Ver detalle
+                                    Modificar
                                 </a>
                             </div>
                         </div>
@@ -35,9 +36,10 @@ const ListaProductos = () => {
                                         <div className='rating-inner'></div>
                                     </div>
                                     <span id="No_de_opiniones"> 2 reviews</span>
+                                    <p className='stock'>10 ítems disponibles</p>
                                 </div>
                                 <p className='card-text'>$72.000</p><a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
-                                    Ver detalle
+                                    Modificar
                                 </a>
                             </div>
                         </div>
@@ -54,9 +56,10 @@ const ListaProductos = () => {
                                         <div className='rating-inner'></div>
                                     </div>
                                     <span id="No_de_opiniones"> 12 reviews</span>
+                                    <p className='stock'>10 ítems disponibles</p>
                                 </div>
                                 <p className='card-text'>$20.000</p><a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
-                                    Ver detalle
+                                    Modificar
                                 </a>
                             </div>
                         </div>
@@ -73,9 +76,10 @@ const ListaProductos = () => {
                                         <div className='rating-inner'></div>
                                     </div>
                                     <span id="No_de_opiniones"> 7 reviews</span>
+                                    <p className='stock'>10 ítems disponibles</p>  
                                 </div>
                                 <p className='card-text'>$15.000</p><a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
-                                    Ver detalle
+                                    Modificar
                                 </a>
                             </div>
                         </div>

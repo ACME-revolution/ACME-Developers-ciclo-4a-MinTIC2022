@@ -11,7 +11,7 @@ const Cabecera = () => {
                     </div>
                 </div>
 
-                <div className="col-12 col-md-6 mt-1 mt-md-0">
+                <div className="col-13 col-md-6 mt-1 mt-md-0">
                     <div class= "input-group">
                         <input
                             type="text"
@@ -35,6 +35,13 @@ const Cabecera = () => {
                 </div>
             </nav>
         </header>
+        <section>
+        <ul class = "navegation">
+                <li><a href="'http://localhost:3000'">Home</a></li>
+                <li><a href="'http://localhost:3000'">Lista de productos</a></li>
+                <li><a href="'http://localhost:3000'">Lista de ventas</a></li>                  
+            </ul>
+        </section>
     </Fragment>
 
   )
