@@ -35,13 +35,6 @@ const Cabecera = () => {
                 </div>
             </nav>
         </header>
-        <section>
-        <ul class = "navegation">
-                <li><a href="'http://localhost:3000'">Home</a></li>
-                <li><a href="'http://localhost:3000'">Lista de productos</a></li>
-                <li><a href="'http://localhost:3000'">Lista de ventas</a></li>                  
-            </ul>
-        </section>
     </Fragment>
 
   )
