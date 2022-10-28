@@ -2,8 +2,8 @@ import {useState, useEffect} from 'react';
 import Articulo from './Articulo';
 
 const ListaArticulos = () => {
-
-  const jsonArticulos = '[{"_id":"00001", "nombre":"Yunque de hierro", "reviews":5, "precio":72000, "imagen":"https://ep01.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438621069_sumario_normal.jpg", "stock":10}, {"_id":"00002", "nombre":"Tornado Kit", "reviews":2, "precio":72000, "imagen":"https://ep01.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438621011_sumario_normal.jpg", "stock":10}, {"_id":"00003", "nombre":"Imán", "reviews":12, "precio":20000, "imagen":"https://ep01.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438621036_sumario_normal.jpg", "stock":10}, {"_id":"00004", "nombre":"Somníferos en pastillas", "reviews":7, "precio":15000, "imagen":"https://pbs.twimg.com/media/CROpULmWUAAowUu.png", "stock":10}]';
+  // Esto solo esta creado para verificar el correcto funcionamiento, apenas se cambie por el fetch se puede borrar (ojo si se modifica este, tambien modificar el de detalle articulo)
+  const jsonArticulos = '[{"_id":"1", "nombre":"Yunque de hierro", "descripcion":"Yunque de hierro", "reviews":5, "precio":72000, "imagen":"https://ep01.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438621069_sumario_normal.jpg", "stock":10}, {"_id":"2", "nombre":"Tornado Kit", "descripcion":"Tornado Kit", "reviews":2, "precio":72000, "imagen":"https://ep01.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438621011_sumario_normal.jpg", "stock":10}, {"_id":"3", "nombre":"Imán", "descripcion":"Imán", "reviews":12, "precio":20000, "imagen":"https://ep01.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438621036_sumario_normal.jpg", "stock":10}, {"_id":"4", "nombre":"Somníferos en pastillas", "descripcion":"Somníferos en pastillas", "reviews":7, "precio":15000, "imagen":"https://pbs.twimg.com/media/CROpULmWUAAowUu.png", "stock":10}]';
   
   const [consulta, setConsulta] = useState([]);
 

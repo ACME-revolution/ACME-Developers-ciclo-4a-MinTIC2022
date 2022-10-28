@@ -11,6 +11,7 @@ import Layout from './layout/Layout';
 import './styles/App.css';
 import ListaProductos from './components/ListaProductos';
 import ListaArticulos from './components/ListaArticulos';
+import DetalleArticulo from './components/DetalleArticulo';
 
 function App() {
   return (
@@ -19,9 +20,10 @@ function App() {
         <Routes>
           {/* Rutas publicas */}
           <Route path='/' element={<Layout/>}>
+            <Route index element={<ListaArticulos />}/>
             <Route path='ListaProductos' element={<ListaProductos/>}/>
-            {/* <Route path='ListaVentas' element={<ListaVentas/>}/> */}
             <Route path='ListaArticulos' element={<ListaArticulos/>}/>
+            <Route path='Articulo/:id' element={<DetalleArticulo />}/>
           </Route>
         </Routes>
       </Router>

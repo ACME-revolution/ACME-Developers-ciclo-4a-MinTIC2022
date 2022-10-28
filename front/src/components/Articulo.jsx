@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom'
 
 const Articulo = ({articulo}) => {
 
   const {_id, nombre, reviews, precio, imagen, stock} = articulo;
 
+  const handleClick = () => {
+    alert("Producto agregado al carrito")
+  }
 
 
   return (
@@ -11,7 +15,14 @@ const Articulo = ({articulo}) => {
         <div className='card p-3 rounded'>
             <img className='card-img-top mx-auto' src={`${imagen}`} alt={`${nombre}`}></img>
             <div className='card-body d-flex flex-column'>
-                <h5 id="titulo_producto"><a href='http://localhost:3000'>{nombre}</a></h5>
+                <h5 id="titulo_producto">
+                    <Link
+                        id={`${_id}`}
+                        to={`/Articulo/${_id}`}
+                    >
+                        {nombre}
+                    </Link>
+                </h5>
                 <div className='rating mt-auto'>
                     <div className='rating-outer'>
                         <div className='rating-inner'></div>
@@ -19,9 +30,10 @@ const Articulo = ({articulo}) => {
                     <span id="No_de_opiniones"> {reviews} reviews</span>
                     <p className='stock'>{stock} ítems disponibles</p>
                 </div>
-                <p className='card-text'>${precio}</p><a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                <p className='card-text'>${precio}</p>
+                <button onClick={handleClick} id="view_btn" className='btn btn-block'>
                     Agregar
-                </a>
+                </button>
             </div>
         </div>
     </div>

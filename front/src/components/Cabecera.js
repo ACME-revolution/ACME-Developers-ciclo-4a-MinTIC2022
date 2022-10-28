@@ -1,6 +1,7 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 
 const Cabecera = () => {
+  const [numeroItemsCarrito, setNumeroItemsCarrito] = useState(0);
   return (
     <Fragment>
         <header>
@@ -12,15 +13,15 @@ const Cabecera = () => {
                 </div>
 
                 <div className="col-13 col-md-6 mt-1 mt-md-0">
-                    <div class= "input-group">
+                    <div className= "input-group">
                         <input
                             type="text"
                             id="search_field"
-                            class="form-control"
+                            className="form-control"
                             placeholder="¿Qué producto está buscando?"></input>
-                        <div class="input-group-append">
-                            <button id="search-btn" class="btn">
-                                <i class="fa fa-search fa-1x text-white" aria-hidden="true"></i>
+                        <div className="input-group-append">
+                            <button id="search-btn" className="btn">
+                                <i className="fa fa-search fa-1x text-white" aria-hidden="true"></i>
                             </button>
                         </div>
                     </div>
@@ -29,9 +30,9 @@ const Cabecera = () => {
                 <div className="col-12 col-md-3 mt-4 mt-md-0 text-center">
                     <span><button className='btn' id="login_btn">Iniciar sesión</button></span>
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <i class="fa fa-shopping-cart fa-1x text-white" aria-hidden="false"></i>
+                    <i className="fa fa-shopping-cart fa-1x text-white" aria-hidden="false"></i>
                     &nbsp;
-                    <span className='ml-1' id="cart_count">2</span>
+                    <span className='ml-1' id="cart_count">{numeroItemsCarrito}</span>
                 </div>
             </nav>
         </header>
