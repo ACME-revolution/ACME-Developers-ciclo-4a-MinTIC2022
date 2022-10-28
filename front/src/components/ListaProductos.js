@@ -3,6 +3,10 @@ import React, { Fragment } from 'react'
 const ListaProductos = () => {
   return (
     <Fragment>
+        <section className='btn-admin'>
+        <button href='http://localhost:3000' className='btn' id="view_btn">Agregar productos</button>
+        <button href='http://localhost:3000' className='btn' id="view_btn">Lista de ventas</button>
+        </section>
         <section id="productos" className='container mt-5'>
                 <div className='row'>
                     {/*Producto 1*/}
@@ -18,9 +22,11 @@ const ListaProductos = () => {
                                     <span id="No_de_opiniones"> 5 reviews</span>
                                     <p className='stock'>10 ítems disponibles</p>
                                 </div>
-                                <p className='card-text'>$72.000</p><a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
-                                    Modificar
-                                </a>
+                                <p className='card-text'>$72.000</p>
+                                <a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                                    Modificar</a>
+                                <a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                                    Eliminar</a>
                             </div>
                         </div>
                     </div>
@@ -38,9 +44,11 @@ const ListaProductos = () => {
                                     <span id="No_de_opiniones"> 2 reviews</span>
                                     <p className='stock'>10 ítems disponibles</p>
                                 </div>
-                                <p className='card-text'>$72.000</p><a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
-                                    Modificar
-                                </a>
+                                <p className='card-text'>$72.000</p>
+                                <a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                                    Modificar</a>
+                                <a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                                    Eliminar</a>
                             </div>
                         </div>
                     </div>
@@ -58,9 +66,11 @@ const ListaProductos = () => {
                                     <span id="No_de_opiniones"> 12 reviews</span>
                                     <p className='stock'>10 ítems disponibles</p>
                                 </div>
-                                <p className='card-text'>$20.000</p><a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
-                                    Modificar
-                                </a>
+                                <p className='card-text'>$72.000</p>
+                                <a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                                    Modificar</a>
+                                <a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                                    Eliminar</a>
                             </div>
                         </div>
                     </div>
@@ -78,9 +88,11 @@ const ListaProductos = () => {
                                     <span id="No_de_opiniones"> 7 reviews</span>
                                     <p className='stock'>10 ítems disponibles</p>  
                                 </div>
-                                <p className='card-text'>$15.000</p><a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
-                                    Modificar
-                                </a>
+                                <p className='card-text'>$72.000</p>
+                                <a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                                    Modificar</a>
+                                <a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                                    Eliminar</a>
                             </div>
                         </div>
                     </div>

@@ -4,10 +4,8 @@ const Nav = () => {
   return (
     <section>
         <ul className = "navegation">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="ListaProductos">Lista de productos</Link></li>
-            <li><Link to="ListaVentas">Lista de ventas</Link></li>
-            <li><Link to="ListaArticulos">Lista de Articulos</Link></li>                     
+            <li><Link to="ListaArticulos">Home usuario</Link></li>  
+            <li><Link to="ListaProductos">Home administrador</Link></li>
         </ul>
     </section>
   )

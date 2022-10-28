@@ -3,7 +3,7 @@ import Articulo from './Articulo';
 
 const ListaArticulos = () => {
 
-  const jsonArticulos = '[{"_id":"00001", "nombre":"Yunque de hierro", "reviews":5, "precio":72000, "imagen":"../../public/images/producto1_junke.jpg", "stock":10}, {"_id":"00002", "nombre":"Tornado Kit", "reviews":2, "precio":72000, "imagen":"../../public/images/producto2_tornado.jpg", "stock":10}, {"_id":"00003", "nombre":"Iman", "reviews":12, "precio":20000, "imagen":"../../public/images/producto3_iman.jpg", "stock":10}, {"_id":"00004", "nombre":"Somniferos en pastillas", "reviews":7, "precio":15000, "imagen":"../../public/images/producto4_pills.jpg", "stock":10}]';
+  const jsonArticulos = '[{"_id":"00001", "nombre":"Yunque de hierro", "reviews":5, "precio":72000, "imagen":"https://ep01.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438621069_sumario_normal.jpg", "stock":10}, {"_id":"00002", "nombre":"Tornado Kit", "reviews":2, "precio":72000, "imagen":"https://ep01.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438621011_sumario_normal.jpg", "stock":10}, {"_id":"00003", "nombre":"Imán", "reviews":12, "precio":20000, "imagen":"https://ep01.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438621036_sumario_normal.jpg", "stock":10}, {"_id":"00004", "nombre":"Somníferos en pastillas", "reviews":7, "precio":15000, "imagen":"https://pbs.twimg.com/media/CROpULmWUAAowUu.png", "stock":10}]';
   
   const [consulta, setConsulta] = useState([]);
 

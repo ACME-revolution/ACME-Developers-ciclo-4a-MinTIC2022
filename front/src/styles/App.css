@@ -70,13 +70,22 @@ nav {
 
 
 /* botón iniciar sesión*/
-#login_btn,
-#view_btn {
+#login_btn {
   background-color: #07B2D9;
   padding: 0.4rem 1.8rem;
   font-weight: bold;
   color: #fff;
 }
+
+.btn-admin {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  justify-content: center;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
 
 /* contador carrito de compras*/
 #cart_count {
@@ -109,8 +118,12 @@ nav {
 /* Botón ver detalle */
 #view_btn {
   background-color: #A63C4F;
+  border-radius: 1rem;
+  font-weight: bold;
   color: white;
 }
+
+
 
 
 /* Tamaño de imagen producto */
