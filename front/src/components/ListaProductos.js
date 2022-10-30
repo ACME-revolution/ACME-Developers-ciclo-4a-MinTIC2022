@@ -96,8 +96,6 @@ const ListaProductos = () => {
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </section>
 

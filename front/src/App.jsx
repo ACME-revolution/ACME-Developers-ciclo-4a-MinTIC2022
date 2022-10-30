@@ -12,6 +12,7 @@ import './styles/App.css';
 import ListaProductos from './components/ListaProductos';
 import ListaArticulos from './components/ListaArticulos';
 import DetalleArticulo from './components/DetalleArticulo';
+import AddProductos from './components/AddProductos';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path='ListaProductos' element={<ListaProductos/>}/>
             <Route path='ListaArticulos' element={<ListaArticulos/>}/>
             <Route path='Articulo/:id' element={<DetalleArticulo />}/>
+            <Route path='AddProductos' element={<AddProductos />}/>
           </Route>
         </Routes>
       </Router>

@@ -181,3 +181,62 @@ footer {
   color: #A63C4F;
 }
 
+.sub-headding{
+  display: absolute;
+  color: #A63C4F;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.agregar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.agregar form .inputBox{
+  display: grid;
+  grid-template-columns: repeat(1, 34rem);
+  grid-gap: 1rem;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 2rem;
+  background-color: #A63C4F;
+  width: 660px;
+  border-radius: 9px;
+}
+
+.imgForm {
+  width: 570px;
+}
+
+.cajon {
+  background: #fff;
+  border-radius: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.cajon1 {
+  background: #fff;
+  border-radius: 9px;
+  padding-top: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-add-product {
+  display: flex;
+  grid-gap: 2rem;
+  justify-content: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+
+
