@@ -125,7 +125,6 @@ nav {
 
 
 
-
 /* Tamaño de imagen producto */
 .card-img-top {
   width: 200px;
@@ -238,5 +237,36 @@ footer {
   padding-right: 10rem;
 }
 
+/*CARRITO DE COMPRAS:*/
+
+.container-cart{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  padding-top: 30px;
+}
+.container-table{
+    background-color:white;
+    width: 70%;
+}
+.container-table .color-icon{
+  width: 100%;
+  height: 100%;
+  color: rgb(139, 9, 9);
+  display: flex;
+  justify-content: center;
+}
+.container-table .color-icon div{
+  cursor: pointer;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-pago{
+  width: 20%;
+}
 
 

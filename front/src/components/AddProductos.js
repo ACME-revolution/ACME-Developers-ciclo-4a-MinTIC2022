@@ -8,7 +8,7 @@ const AddProductos = () => {
                 <form action="">
                     <div className='inputBox'>
                         <span className='etiqueta'>Agregar imagen:</span>
-                        <img className='imgForm' src='.\images\addimg.jpg' alt="Producto1"></img>
+                        <input accept="image/*" type="file" multiple></input>
                         <span className='etiqueta'>Nombre del producto:</span>
                         <input className='cajon' type='text' placeholder='Escriba el nombre del producto'></input>
                         <span className='etiqueta'>Descripción:</span>

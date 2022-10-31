@@ -1,11 +1,26 @@
 import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom'
+
+
+function agregarProduct() {
+    alert("producto agregado correctamente")
+}
+function listarProductVendidos() {
+    alert("listando productos vendidos")
+}
+function modificarProduct() {
+    alert("producto modificado")
+}
+function deleteProduct() {
+    alert("producto eliminado")
+}
 
 const ListaProductos = () => {
   return (
     <Fragment>
         <section className='btn-admin'>
-        <button href='http://localhost:3000' className='btn' id="view_btn">Agregar productos</button>
-        <button href='http://localhost:3000' className='btn' id="view_btn">Lista de ventas</button>
+        <Link className='btn' id="view_btn" to={`/AddProductos`}>Agregar productos</Link>
+        <button onClick={listarProductVendidos} className='btn' id="view_btn">Lista de ventas</button>
         </section>
         <section id="productos" className='container mt-5'>
                 <div className='row'>
@@ -23,9 +38,9 @@ const ListaProductos = () => {
                                     <p className='stock'>10 ítems disponibles</p>
                                 </div>
                                 <p className='card-text'>$72.000</p>
-                                <a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                                <a onClick={modificarProduct} id="view_btn" className='btn btn-block'>
                                     Modificar</a>
-                                <a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                                <a onClick={deleteProduct} id="view_btn" className='btn btn-block'>
                                     Eliminar</a>
                             </div>
                         </div>
@@ -45,9 +60,9 @@ const ListaProductos = () => {
                                     <p className='stock'>10 ítems disponibles</p>
                                 </div>
                                 <p className='card-text'>$72.000</p>
-                                <a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                                <a onClick={modificarProduct} id="view_btn" className='btn btn-block'>
                                     Modificar</a>
-                                <a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                                <a onClick={deleteProduct} id="view_btn" className='btn btn-block'>
                                     Eliminar</a>
                             </div>
                         </div>
@@ -67,9 +82,9 @@ const ListaProductos = () => {
                                     <p className='stock'>10 ítems disponibles</p>
                                 </div>
                                 <p className='card-text'>$72.000</p>
-                                <a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                                <a onClick={modificarProduct} id="view_btn" className='btn btn-block'>
                                     Modificar</a>
-                                <a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                                <a onClick={deleteProduct} id="view_btn" className='btn btn-block'>
                                     Eliminar</a>
                             </div>
                         </div>
@@ -89,9 +104,9 @@ const ListaProductos = () => {
                                     <p className='stock'>10 ítems disponibles</p>  
                                 </div>
                                 <p className='card-text'>$72.000</p>
-                                <a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                                <a onClick={modificarProduct} id="view_btn" className='btn btn-block'>
                                     Modificar</a>
-                                <a href='http://localhost:3000' id="view_btn" className='btn btn-block'>
+                                <a onClick={deleteProduct} id="view_btn" className='btn btn-block'>
                                     Eliminar</a>
                             </div>
                         </div>

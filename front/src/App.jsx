@@ -3,16 +3,15 @@ import {
   Routes, 
   Route 
 } from 'react-router-dom';
-
 // Layout
 import Layout from './layout/Layout';
-
 //Componentes
 import './styles/App.css';
 import ListaProductos from './components/ListaProductos';
 import ListaArticulos from './components/ListaArticulos';
 import DetalleArticulo from './components/DetalleArticulo';
 import AddProductos from './components/AddProductos';
+import Carrito from './components/Carrito';
 
 function App() {
   return (
@@ -26,6 +25,7 @@ function App() {
             <Route path='ListaArticulos' element={<ListaArticulos/>}/>
             <Route path='Articulo/:id' element={<DetalleArticulo />}/>
             <Route path='AddProductos' element={<AddProductos />}/>
+            <Route path='carrito' element={<Carrito />}/>
           </Route>
         </Routes>
       </Router>
