@@ -4,6 +4,10 @@ function deleteProduct() {
     alert("producto sacado de la lista")
 }
 
+function payProducts() {
+  alert("Pagando")
+}
+
 export const Carrito = () => {
     return (
     <Fragment>
@@ -59,8 +63,8 @@ export const Carrito = () => {
         </table>
         </div>
         <div className='container-pago'>
-            <h2>Total a pagar: $100.000</h2>
-            <button onClick={deleteProduct} type="button" class="btn btn-warning">Proceder a pagar</button>
+            <h2>Total a pagar: $104.000</h2>
+            <button onClick={payProducts} type="button" class="btn btn-warning">Proceder a pagar</button>
         </div>
       </div>
     </Fragment>

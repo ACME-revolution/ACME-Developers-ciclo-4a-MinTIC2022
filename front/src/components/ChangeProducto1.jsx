@@ -1,6 +1,11 @@
 import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom';
 
-const AddProductos = () => {
+const ChangeProducto1 = () => {
+    const handleClickSave = () => {
+        alert('Producto actualizado');
+    }
+
     return (
         <Fragment>
             <h3 className='sub-headding'><center>Agregar nuevos productos</center></h3>
@@ -10,24 +15,24 @@ const AddProductos = () => {
                         <span className='etiqueta'>Agregar imagen:</span>
                         <input accept="image/*" type="file" multiple></input>
                         <span className='etiqueta'>Nombre del producto:</span>
-                        <input className='cajon' type='text' placeholder='Escriba el nombre del producto'></input>
+                        <input className='cajon' type='text' placeholder="Yunque de hierro"></input>
                         <span className='etiqueta'>Descripción:</span>
-                        <input className='cajon1' type='text' placeholder='Escriba una breve descripción del producto'></input>
+                        <input className='cajon1' type='text' placeholder="Yunque de hierro"></input>
                         <span className='etiqueta'>Costo:</span>
-                        <input className='cajon'  type='number' placeholder='Escriba el precio unitario del producto'></input>
+                        <input className='cajon'  type='number' placeholder='72000'></input>
                         <span className='etiqueta'>Stock:</span>
-                        <input className='cajon' type='number' placeholder='Total de ítems a almacenar'></input>
+                        <input className='cajon' type='number' placeholder='10'></input>
                     </div>
                 </form>
             </section>
 
             <section className='btn-add-product'>
-                <button href='http://localhost:3000/AddProductos' className='btn' id="view_btn">Guardar</button>
-                <button href='http://localhost:3000/ListaProductos' className='btn' id="view_btn">Cancelar</button>
+                <Link to={"/ListaProductos"} onClick={handleClickSave} className='btn' id="view_btn">Actualizar</Link>
+                <Link to={"/ListaProductos"} className='btn' id="view_btn">Cancelar</Link>
             </section>
         </Fragment>
   
     )
   }
-  
-export default AddProductos
+
+export default ChangeProducto1

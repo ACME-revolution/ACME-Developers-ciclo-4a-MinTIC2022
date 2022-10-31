@@ -12,6 +12,11 @@ import ListaArticulos from './components/ListaArticulos';
 import DetalleArticulo from './components/DetalleArticulo';
 import AddProductos from './components/AddProductos';
 import Carrito from './components/Carrito';
+// estos 4 componentes estas quemados pero solo es a modo de plantilla
+import ChangeProducto1 from './components/ChangeProducto1';
+// import ChangeProducto2 from './components/ChangeProducto2';
+// import ChangeProducto3 from './components/ChangeProducto3';
+// import ChangeProducto4 from './components/ChangeProducto4';
 
 function App() {
   return (
@@ -26,6 +31,8 @@ function App() {
             <Route path='Articulo/:id' element={<DetalleArticulo />}/>
             <Route path='AddProductos' element={<AddProductos />}/>
             <Route path='carrito' element={<Carrito />}/>
+            {/* estas 4 rutas estan quemadas pero solo es a modo de plantilla */}
+            <Route path='Change/1' element={<ChangeProducto1 />}/>
           </Route>
         </Routes>
       </Router>
