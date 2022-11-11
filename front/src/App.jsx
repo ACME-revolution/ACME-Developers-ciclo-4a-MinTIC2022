@@ -29,7 +29,7 @@ function App() {
             <Route path='ListaProductos' element={<ListaProductos/>}/>
             <Route path='ListaArticulos' element={<ListaArticulos/>}/>
             <Route path='Articulo/:id' element={<DetalleArticulo />}/>
-            <Route path='AddProductos' element={<AddProductos />}/>
+            <Route path='Producto/AddProductos' element={<AddProductos />}/>
             <Route path='carrito' element={<Carrito />}/>
             {/* estas 4 rutas estan quemadas pero solo es a modo de plantilla */}
             <Route path='Change/1' element={<ChangeProducto1 />}/>
