@@ -18,7 +18,7 @@ const ChangeProducto2 = () => {
                         <input className='cajon' type='text' placeholder="Tornado KIT"></input>
                         <span className='etiqueta'>Descripción:</span>
                         <input className='cajon1' type='text' placeholder="Tornado KIT"></input>
-                        <span className='etiqueta'>Costo:</span>
+                        <span className='etiqueta'>Precio:</span>
                         <input className='cajon'  type='number' placeholder='72000'></input>
                         <span className='etiqueta'>Stock:</span>
                         <input className='cajon' type='number' placeholder='10'></input>
