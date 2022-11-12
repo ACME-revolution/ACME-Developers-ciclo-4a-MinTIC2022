@@ -30,10 +30,6 @@ const Cabecera = () => {
 
                 <div className="col-12 col-md-3 mt-4 mt-md-0 text-center">
                     <span><button className='btn' id="login_btn">Iniciar sesión</button></span>
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <Link to={`/carrito`}><i className="fa fa-shopping-cart fa-1x text-white" aria-hidden="false"></i></Link>
-                    &nbsp;
-                    <span className='ml-1' id="cart_count">{numeroItemsCarrito}</span>
                 </div>
             </nav>
         </header>

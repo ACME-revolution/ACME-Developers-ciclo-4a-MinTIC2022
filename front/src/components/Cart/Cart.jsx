@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { useContext } from "react";
 import { useState } from "react";
 import { previous } from "react";
-import App from "../../App";
 import { CartContext } from "../../Context/CartContext";
 
 const Cart = () => {
@@ -14,8 +13,8 @@ const Cart = () => {
 
     useEffect(() => {
         setProductsLength(
-            cartItems.reduce(previous, current => previous + current.amount, 0)
-        );
+            cartItems?.reduce((previous, current) => previous + current.amount, 0)
+            );
     }, [cartItems]);
 
     const total = cartItems?.reduce(
@@ -24,12 +23,12 @@ const Cart = () => {
     );
 
     return (
-    <div className={App.cartContainer}>
-        <div className={App.ButtonCartContainertContext}>
-            <div>
+    <div className="cartContainer">
+        <div className="buttonCartContainert">
+            <div className="buttonCart">
                 {!cartOpen ? (
                     <svg
-                        className={App.open}
+                        className="Open"
                         width={"35px"}
                         viewBox="0 0 30 27"
                         fill="none"
@@ -63,10 +62,10 @@ const Cart = () => {
                     </svg>
                 )}
             </div>
-            {!cartOpen && ( <div className={App.productsnumber}>{productsLength}</div>)}
+            {!cartOpen && ( <div className= "productsNumber">{productsLength}</div>)}
         </div>
     </div>
 )};
 
 
-export default Cart
+export default Cart;
