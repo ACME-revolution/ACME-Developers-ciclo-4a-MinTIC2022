@@ -15,6 +15,12 @@ body {
   overflow-x: hidden;
 }
 
+.productsContainer {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
 
 nav {
   justify-items: center;
@@ -75,6 +81,7 @@ nav {
   padding: 0.4rem 1.8rem;
   font-weight: bold;
   color: #fff;
+  cursor: pointer;
 }
 
 .btn-admin {
@@ -84,6 +91,7 @@ nav {
   justify-content: center;
   padding-left: 8rem;
   padding-right: 8rem;
+  cursor: pointer;
 }
 
 
@@ -121,6 +129,7 @@ nav {
   border-radius: 1rem;
   font-weight: bold;
   color: white;
+  cursor: pointer;
 }
 
 
@@ -235,6 +244,7 @@ footer {
   justify-content: center;
   padding-left: 10rem;
   padding-right: 10rem;
+  cursor: pointer;
 }
 
 /*CARRITO DE COMPRAS:*/

@@ -4,7 +4,7 @@ import {
   Route 
 } from 'react-router-dom';
 // Layout
-import Layout from './layout/Layout';
+import Layout from './components/Home/layout/Layout';
 //Componentes
 import './styles/App.css';
 import ListaProductos from './components/ListaProductos';
@@ -17,9 +17,13 @@ import ChangeProducto1 from './components/ChangeProducto1';
 import ChangeProducto2 from './components/ChangeProducto2';
 import ChangeProducto3 from './components/ChangeProducto3';
 import ChangeProducto4 from './components/ChangeProducto4';
+import Cart from './components/Cart/Cart';
+import Products from './components/Products/Products';
+import { CartProvider } from './Context/CartContext';
 
 function App() {
   return (
+    <CartProvider>
     <div className="App">
       <Router>
         <Routes>
@@ -36,11 +40,14 @@ function App() {
             <Route path='Change/2' element={<ChangeProducto2 />}/>
             <Route path='Change/3' element={<ChangeProducto3 />}/>
             <Route path='Change/4' element={<ChangeProducto4 />}/>
+            <Route path='Cart' element={<Cart />}/>
+            <Route path='Products' element={<Products />}/>
           </Route>
         </Routes>
       </Router>
 
     </div>
+    </CartProvider>
     
   );
 }
