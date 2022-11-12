@@ -18,7 +18,7 @@ const AddProductos = () => {
                         <input className='cajon' type='text' placeholder='Escriba el nombre del producto'></input>
                         <span className='etiqueta'>Descripción:</span>
                         <input className='cajon1' type='text' placeholder='Escriba una breve descripción del producto'></input>
-                        <span className='etiqueta'>Costo:</span>
+                        <span className='etiqueta'>Precio:</span>
                         <input className='cajon'  type='number' placeholder='Escriba el precio unitario del producto'></input>
                         <span className='etiqueta'>Stock:</span>
                         <input className='cajon' type='number' placeholder='Total de ítems a almacenar'></input>

@@ -9,7 +9,7 @@ const ListaProductos = () => {
   return (
     <Fragment>
         <section className='btn-admin'>
-        <Link className='btn' id="view_btn" to={`/AddProductos`}>Agregar productos</Link>
+        <Link className='btn' id="view_btn" to={`/Producto/AddProductos`}>Agregar productos</Link>
         <Link to={"/carrito"} className='btn' id="view_btn">Lista de ventas</Link>
         </section>
         <section id="productos" className='container mt-5'>
