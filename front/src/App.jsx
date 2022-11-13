@@ -11,7 +11,6 @@ import ListaProductos from './components/ListaProductos';
 import ListaArticulos from './components/ListaArticulos';
 import DetalleArticulo from './components/DetalleArticulo';
 import AddProductos from './components/AddProductos';
-import Carrito from './components/Carrito';
 // estos 4 componentes estas quemados pero solo es a modo de plantilla
 import ChangeProducto1 from './components/ChangeProducto1';
 import ChangeProducto2 from './components/ChangeProducto2';
@@ -29,12 +28,11 @@ function App() {
         <Routes>
           {/* Rutas publicas */}
           <Route path='/' element={<Layout/>}>
-            <Route index element={<ListaArticulos />}/>
+            <Route index element={<Products />}/>
             <Route path='ListaProductos' element={<ListaProductos/>}/>
             <Route path='ListaArticulos' element={<ListaArticulos/>}/>
             <Route path='Articulo/:id' element={<DetalleArticulo />}/>
             <Route path='Producto/AddProductos' element={<AddProductos />}/>
-            <Route path='carrito' element={<Carrito />}/>
             {/* estas 4 rutas estan quemadas pero solo es a modo de plantilla */}
             <Route path='Change/1' element={<ChangeProducto1 />}/>
             <Route path='Change/2' element={<ChangeProducto2 />}/>

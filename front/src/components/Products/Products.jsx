@@ -23,7 +23,7 @@ const Products = () => {
                                     <span id="No_de_opiniones"> {product.reviews} reviews</span>
                                     <p className='stock'>{product.amount} ítems disponibles</p>
                                 </div>
-                                <p className='card-text'>{product.price}</p>
+                                <p className='card-text'>${product.price} COP</p>
                                 <button onClick={() => addItemToCart(product)} id="view_btn" className='btn btn-block'>
                                     Agregar a carrtito
                                 </button>

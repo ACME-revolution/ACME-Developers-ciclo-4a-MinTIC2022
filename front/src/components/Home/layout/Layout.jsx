@@ -1,4 +1,4 @@
-import {Outlet} from "react-router-dom"
+import { Outlet } from "react-router-dom"
 //Componentes
 import Header from '../Cabecera';
 import Nav from '../Nav';
@@ -8,11 +8,11 @@ import Cart from '../../Cart/Cart'
 const Layout = () => {
   return (
     <>
-        <Header/>
-        <Cart/>
-        <Nav/>
-        <Outlet/>
-        <Footer/>
+      <Header />
+      <Nav />
+      <Cart />
+      <Outlet />
+      <Footer />
     </>
   )
 }

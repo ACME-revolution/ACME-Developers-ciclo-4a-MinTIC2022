@@ -7,14 +7,17 @@ export const ProductData = [
         price: 72000,
         img: "https://ep01.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438621069_sumario_normal.jpg",
         amount: 0,
+        stock:0,
     },
     { 
         id: 2, 
         name: "Tornado Kit", 
         descripcion: "Tornado Kit", 
-        reviews: 2, price: 72000, 
+        reviews: 2, 
+        price: 72000, 
         img: "https://ep01.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438621011_sumario_normal.jpg", 
         amount: 0,
+        stock:0,
     }, 
     { 
         id: 3, 
@@ -24,6 +27,7 @@ export const ProductData = [
         price: 20000, 
         img: "https://ep01.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438621036_sumario_normal.jpg", 
         amount: 0, 
+        stock:0,
     }, 
     { 
         id: 4, 
@@ -33,5 +37,6 @@ export const ProductData = [
         price: 15000, 
         img: "https://pbs.twimg.com/media/CROpULmWUAAowUu.png", 
         amount: 0,
+        stock:0,
     }
 ]
