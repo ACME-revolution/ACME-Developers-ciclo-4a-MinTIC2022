@@ -15,11 +15,12 @@ body {
   overflow-x: hidden;
 }
 
-.productsContainer {
+.container-products-home{
   width: 100%;
-  display: grid;
+  display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  gap: 10px;
+  z-index: 0;
 }
 
 nav {
@@ -314,6 +315,7 @@ footer {
   align-items: center;
   justify-content: center;
   border-radius: 999px;
+  margin-top: -245px;
 }
 
 .productsNumber {
@@ -339,6 +341,7 @@ footer {
   width: 400px;
   background-color: #000000;
   color: #fff;
+  margin-top: -190px;
 }
 
 .cartMensaje {
@@ -475,4 +478,9 @@ footer {
   font-size: 16px;
   font-weight: bold;
   color: #fff;
+}
+
+.container-panel-login{
+  display: flex;
+  margin-right: 15px;
 }

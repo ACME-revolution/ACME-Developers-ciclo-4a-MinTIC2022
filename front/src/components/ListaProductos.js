@@ -17,7 +17,7 @@ const ListaProductos = () => {
                     {/*Producto 1*/}
                     <div className='col-sm-12 col-md-6 col-lg-3 my-3'>
                         <div className='card p-3 rounded'>
-                            <img className='card-img-top mx-auto' src='.\images\producto1_junke.jpg' alt="Producto1"></img>
+                            <img className='card-img-top mx-auto' src="..\images\producto1_junke.jpg" alt="Producto1"></img>
                             <div className='card-body d-flex flex-column'>
                                 <h5 id="titulo_producto"><a href='http://localhost:3000'>Yunque de hierro</a></h5>
                                 <div className='rating mt-auto'>
@@ -39,7 +39,7 @@ const ListaProductos = () => {
                     {/*Producto 2*/}
                     <div className='col-sm-12 col-md-6 col-lg-3 my-3'>
                         <div className='card p-3 rounded'>
-                            <img className='card-img-top mx-auto' src='.\images\producto2_tornado.jpg' alt="Producto2"></img>
+                            <img className='card-img-top mx-auto' src='..\images\producto2_tornado.jpg' alt="Producto2"></img>
                             <div className='card-body d-flex flex-column'>
                                 <h5 id="titulo_producto"><a href='http://localhost:3000'>Tornado KIT</a></h5>
                                 <div className='rating mt-auto'>
@@ -61,7 +61,7 @@ const ListaProductos = () => {
                     {/*Producto 3*/}
                     <div className='col-sm-12 col-md-6 col-lg-3 my-3'>
                         <div className='card p-3 rounded'>
-                            <img className='card-img-top mx-auto' src='./images/producto3_iman.jpg' alt="Producto3"></img>
+                            <img className='card-img-top mx-auto' src='../images/producto3_iman.jpg' alt="Producto3"></img>
                             <div className='card-body d-flex flex-column'>
                                 <h5 id="titulo_producto"><a href='http://localhost:3000'>Imán</a></h5>
                                 <div className='rating mt-auto'>
@@ -83,7 +83,7 @@ const ListaProductos = () => {
                     {/*Producto 4*/}
                     <div className='col-sm-12 col-md-6 col-lg-3 my-3'>
                         <div className='card p-3 rounded'>
-                            <img className='card-img-top mx-auto' src='./images/producto4_pills.jpg' alt="Producto4"></img>
+                            <img className='card-img-top mx-auto' src='../images/producto4_pills.jpg' alt="Producto4"></img>
                             <div className='card-body d-flex flex-column'>
                                 <h5 id="titulo_producto"><a href='http://localhost:3000'>Somníferos en pastillas</a></h5>
                                 <div className='rating mt-auto'>

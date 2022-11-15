@@ -5,7 +5,6 @@ const Nav = () => {
     <section>
         <ul className = "navegation">
             <li><Link to="Products">Home usuario</Link></li>  
-            <li><Link to="ListaProductos">Home administrador</Link></li>
         </ul>
     </section>
   )

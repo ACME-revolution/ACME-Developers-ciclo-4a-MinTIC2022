@@ -1,103 +1,107 @@
-import Producto from '../models/Producto.js'; //importar el modelo de productos
-import fs from 'fs-extra';
-import {
-    uploadImage,
-    deleteImage
-} from '../helper/cloudinary.js'; // funciones para subir y eliminar en cloudinary
+import Producto from "../models/Producto.js"; //importar el modelo de productos
+import catchAsyncErrors from "../middleware/catchAsyncErrors.js";
+import ErrorHandler from "../utils/errorHandler.js";
+//usamos la siguiente linea para poder importar fetch cuando en un proyecto usamos el modulo commonJS el cual usa solo require, con esto podemos evitar tener que cambiar en el package.json el tipo del proyecto por module:
+//const fetch =(url)=>import('node-fetch').then(({default:fetch})=> fetch(url));
 
-const createProductos = async (req, res) => {
 
-    try {
+//aca listamos todos los productos
+const getProducts= catchAsyncErrors( async (req, res, next) => {
+    const myProducts= await Producto.find()// find me trae toda la lista de productos de la BD
+    
+    //si no estan los productos:
+    if (!myProducts){
+        return next(new ErrorHandler("información no encontrada", 404))
+    }
+    //respondemos:
+    res.status(200).json({
+        sucess: true,
+        cantidad: Producto.length -1, //contamos todos los productos
+        myProducts,
+        message: "proceso exitoso"
+    })
+})
 
-        const { nombre, descripcion, precio, stock } = req.body;
-        let image;
-
-        if (req.files.image) {
-
-            const result = await uploadImage(req.files.image.tempFilePath);
-
-            await fs.remove(req.files.image.tempFilePath);
-            image = {
-                url: result.secure_url,
-                public_id: result.public_id,
-            };
-
-            console.log(result);     
+//aca listamos un producto por id
+//metemos nuestra funcion dentro de catchAsyncErrors para manejar los errores de está
+const getByIdProduct= catchAsyncErrors( async (req, res, next) => {
+    //traemos el id de la ruta:
+    const myProduct= await Producto.findById(req.params.id)// findById me trae un producto de la BD
+    
+    //respondemos:
+    if(!myProduct){
+        return next(new ErrorHandler("Producto no encontrado", 404)) //usamos el next que está en la funcion catchAsyncError
         }
-
-        const Newproducto = new Producto({nombre, descripcion, precio, image, stock});
-        await Newproducto.save();
-
-        return res.json(Newproducto);
-        
-    } catch (error) {
-        console.log(error);
-        return res.status(500).json({ msg: error.message });
+    else{
+        res.status(200).json({
+            sucess: true,
+            message: "Acá tienes tu producto",
+            myProduct
+        })
     }
-};    
+})
 
-const getProductos = async (req, res) => {
-    try {
-        const productos = await Producto.find();
-        res.send(productos);
-    } catch (error) {
-        console.log(error.message);
-        return res.status(500).json({ message: error.message });
+//acá actualizamos un producto:
+const updateProduct= catchAsyncErrors(async (req,res,next) =>{
+
+    if (!req.params.id || !req.body) return res.status(400).send({ message: 'Client has not sent params' });
+    //primero verificamos si el producto existe:
+    let myProduct= await Producto.findById(req.params.id)// findById me trae un producto de la BD
+    //respondemos:
+    if (!myProduct){
+        return next(new ErrorHandler("Producto no encontrado", 404))
     }
-};
+    
+    //si el producto existe procedemos a actualizar sus datos:
+    myProduct= await Producto.findByIdAndUpdate(req.params.id, req.body, {
+        new:true, //indicamos que registre solo los datos nuevos del producto
+        runValidators:true //indicamos que valide la data nueva que va actualizar
+    });
+    //respondemos:
+    res.status(200).json({
+        success:true,
+        message:"Producto actualizado con exito",
+        myProduct
+    })
 
-const updateProductos = async (req, res) => {
-    try {
-        const updatedProduct = await Producto.findByIdAndUpdate(
-            req.params.id,
-            req.body,
-            {
-                new: true,
-            }
-        );
-        return res.send(updatedProduct);
-    } catch (error) {
-        return res.status(500).json({ message: error.message });
+})
+
+//acá eliminamos un producto:
+const deleteProduct= catchAsyncErrors( async(req,res,next) => {
+
+    if (!req.params.id || !req.body) return res.status(400).send({ message: 'Client has not sent params' });
+    //primero verificamos si el producto existe:
+    const myProduct= await Producto.findById(req.params.id)// findById me trae un producto de la BD
+    //si el producto no está por ese id respondemos::
+    if(!myProduct){
+        return res.status(404).json({
+            sucess: false,
+            message: "No se encuentra el producto que quieres eliminar"
+        })
     }
-};
+    //removemos el producto:
+    await Producto.remove();
+    res.status(200).json({
+        sucess:true,
+        message: "Producto eliminado correctamente"
+    })
+})
 
-const deleteProductos = async (req, res) => {
-    try {
-        const productRemoved = await Producto.findByIdAndDelete(req.params.id);
-
-        if (!productRemoved) {
-            const error = new Error("Token no valido");
-            return res.sendStatus(404);
-        } else {
-
-            if (productRemoved.image.public_id) {
-                await deleteImage(productRemoved.image.public_id);
-            }
-            return res.sendStatus(204);
-        }
-    } catch (error) {
-        return res.status(500).json({ message: error.message });
-    }
-};
-
-const getProducto = async (req, res) => {
-    try {
-        const OneProduct = await Producto.findById(req.params.id);
-
-        if (!OneProduct) {
-            return res.sendStatus(404);
-        } else {
-            return res.json(OneProduct);
-        }
-    } catch (error) {
-        return res.status(500).json({ message: error.message });
-    }
-};
+//acá creamos los productos
+const newProducts= catchAsyncErrors( async(req,res,next) => {
+    const myProduct= await Producto.create(req.body)
+    
+    //respondemos:
+    res.status(201).json({
+        sucess:true,
+        myProduct //devolvemos le producto
+    })
+})
 
 export { 
-    getProductos,
-    createProductos,
-    updateProductos,
-    deleteProductos,
-    getProducto 
+    getProducts,
+    newProducts,
+    updateProduct,
+    deleteProduct,
+    getByIdProduct 
 };

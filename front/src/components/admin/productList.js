@@ -1,13 +1,27 @@
-import React from "react";
+import React, { Fragment} from 'react'
+import MetaData from '../Home/layout/metadata'
+import Sidebar from './sidebar'
 import { useContext } from "react";
+import { Link } from 'react-router-dom'
 import { ProductData } from "../../Data/ProductsData";
 import { CartContext } from "../../Context/CartContext";
 
-const Products = () => {
+
+const ProductsListAdmin = () => {
     const { addItemToCart } = useContext(CartContext)
+   
 
     return (
-        <div className="container-products-home">
+        <Fragment>
+        <MetaData title={'All Products'} />
+        <div className="row">
+            <div className="col-12 col-md-2">
+                <Sidebar />
+            </div>
+
+            <div className="col-12 col-md-10">
+            <Fragment>    
+            <div className="container-products-home">
             {ProductData.map((product, i) => (
                 <div key={i}>
                     <div className='productsContainer'>
@@ -33,8 +47,13 @@ const Products = () => {
                 </div>
             ))
             }
-        </div >
+               </div >
+               </Fragment>
+            </div>
+        </div>
+
+    </Fragment>
     )
 }
 
-export default Products
+export default ProductsListAdmin

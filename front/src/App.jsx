@@ -19,6 +19,8 @@ import ChangeProducto4 from './components/ChangeProducto4';
 import Cart from './components/Cart/Cart';
 import Products from './components/Products/Products';
 import { CartProvider } from './Context/CartContext';
+import { Dashboard } from './components/admin/dashboard';
+import ProductsListAdmin from './components/admin/productList';
 
 function App() {
   return (
@@ -29,10 +31,12 @@ function App() {
           {/* Rutas publicas */}
           <Route path='/' element={<Layout/>}>
             <Route index element={<Products />}/>
-            <Route path='ListaProductos' element={<ListaProductos/>}/>
+            <Route path='/admin/listaProductos' element={<ListaProductos/>}/>
             <Route path='ListaArticulos' element={<ListaArticulos/>}/>
             <Route path='Articulo/:id' element={<DetalleArticulo />}/>
             <Route path='Producto/AddProductos' element={<AddProductos />}/>
+            <Route path="/admin/dashboard" element={<Dashboard />}></Route>
+            <Route path="/admin/productListAdmin" element={<ProductsListAdmin />}></Route>
             {/* estas 4 rutas estan quemadas pero solo es a modo de plantilla */}
             <Route path='Change/1' element={<ChangeProducto1 />}/>
             <Route path='Change/2' element={<ChangeProducto2 />}/>
