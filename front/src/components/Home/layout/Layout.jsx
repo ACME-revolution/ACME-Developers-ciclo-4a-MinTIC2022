@@ -9,9 +9,9 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <Nav />
-      <Cart />
+      <Nav />   
       <Outlet />
+      <Cart />  
       <Footer />
     </>
   )

@@ -8,20 +8,27 @@ html,
 
 body {
   font-family: 'Candara';
-  width: 100%;
-  height: 100%;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
 }
 
-.container-products-home{
-  width: 100%;
+.Cabecera_logo {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  z-index: 0;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+
+.container-products-home{
+  display: flex;
+  justify-content:center;
+  width: auto;
+  gap: 30px;
+  z-index: 2;
+}
+
 
 nav {
   justify-items: center;
@@ -63,8 +70,8 @@ nav {
 /* barra de búsqueda */
 .input-group {
   display: flex;
-  width: 100%;
-  margin-right: 40%;
+  width: 80%;
+  margin-right: 30%;
 
 }
 
@@ -81,8 +88,11 @@ nav {
 
 /* botón iniciar sesión*/
 #login_btn {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 110px;
   background-color: #07B2D9;
-  padding: 0.4rem 1.8rem;
+  padding: 8px 15px;
   font-weight: bold;
   color: #fff;
   cursor: pointer;
@@ -98,16 +108,6 @@ nav {
   cursor: pointer;
 }
 
-
-/* contador carrito de compras*/
-#cart_count {
-  background-color: #07B2D9;
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.2rem;
-  color: #fff;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
 
 /* Home page */
 #products_heading {
@@ -256,11 +256,8 @@ footer {
 
 .container-cart {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 100%;
-  height: 100vh;
-  padding-top: 30px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container-table {
@@ -284,22 +281,20 @@ footer {
 }
 
 .container-pago {
-  width: 20%;
+  width: 10%;
 }
 
 .cartContainer {
-  width: 100vw;
-  height: 50px;
+  padding: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: right;
 }
 
 .buttonCartContainert {
   position: absolute;
-  margin-top: 50px;
-  margin-right: 20px;
+  margin-right: 10px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 1;
 }
 
 .buttonCartContainert.svg {
@@ -309,21 +304,22 @@ footer {
 
 .buttonCart {
   background-color: #C72D29;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  margin-top: -245px;
+  margin-top: -605px;
+  margin-right: 40px;
 }
 
 .productsNumber {
-  height: 30px;
+  height: 20px;
   width: 30px;
   border-radius: 50px;
-  top: 0;
-  right: 0;
+  top: -10;
+  right: -40;
   background-color: #07B2D9;
   font-size: 18px;
   font-weight: bold;
@@ -338,10 +334,10 @@ footer {
   margin-top: 1rem;
   margin-right: 2rem;
   border-radius: 2rem;
-  width: 400px;
+  width: 370px;
   background-color: #000000;
   color: #fff;
-  margin-top: -190px;
+  margin-top: -600px;
 }
 
 .cartMensaje {
@@ -380,7 +376,7 @@ footer {
 }
 
 .productsCart {
-  max-height: 200px;
+  max-height: 150px;
   margin-top: 5px;
   margin-right: 5px;
   overflow-y: scroll;

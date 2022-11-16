@@ -7,13 +7,13 @@ const Cabecera = () => {
     <Fragment>
         <header>
             <nav className="navbar row">
-                    <div className="col-10 col-md-1">
+                    <div className="col-1 col-md-2">
                         <div className="navbar-brand">
-                        <img src="..\images\logoAcme.jpg" width="200" height="200" alt= "Logo ACME Corporation"></img>
+                        <img src="..\images\logoAcme.jpg" width="120" height="130" alt= "Logo ACME Corporation"></img>
                     </div>
                 </div>
 
-                <div className="col-13 col-md-6 mt-1 mt-md-0">
+                <div className="col-10 col-md-6 mt-1 mt-md-1">
                     <div className= "input-group">
                         <input
                             type="text"
