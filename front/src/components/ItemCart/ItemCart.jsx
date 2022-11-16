@@ -13,7 +13,7 @@ export const ItemCart = ({ item }) => {
         <div className='left'>
           <p className='left-p'>{item.name}</p>
           <div className='buttonsCart'>
-            <button className='buttonsCart1' nClick={() => addItemToCart(item)}>Agregar</button>
+            <button className='buttonsCart1' onClick={() => addItemToCart(item)}>Agregar</button>
             <button className='buttonsCart1' onClick={() => deleteItemToCart(item)}>Eliminar</button>
           </div>
         </div>
