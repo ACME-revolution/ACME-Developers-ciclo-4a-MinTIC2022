@@ -7,12 +7,21 @@ const Sidebar = () => {
         <div className="sidebar-wrapper">
             <nav id="sidebar">
                 <ul className="list-unstyled components sidebar">
+
                     <li>
-                        <Link to="/admin/dashboard"><i className="fa fa-tachometer"></i> Administración</Link>
+                        <Link to="/"><i className="fa fa-home"></i> Home</Link>
                     </li>
 
                     <li>
-                        <Link to="/admin/productListAdmin"><i className="fa fa-clipboard"></i> Lista de Productos </Link>
+                        <Link to="/admin/dashboard"><i className="fa fa-tachometer"></i> Estadísticas de ventas</Link>
+                    </li>
+
+                    <li>
+                        <Link to="/admin/ModificarElementos"><i className="fa fa-clipboard"></i> Total inventario </Link>
+                    </li>
+
+                    <li>
+                        <Link to="/admin/AgregarProductos"><i className="fa fa-plus-square"></i> Agregar productos </Link>
                     </li>
 
                     <li>
@@ -24,7 +33,7 @@ const Sidebar = () => {
                     </li>
 
                     <li>
-                        <Link to="/admin/reviews"><i className="fa fa-star"></i> Opiniones</Link>
+                        <Link to="/admin/reviews"><i className="fa fa-comments"></i> Opiniones</Link>
                     </li>
 
                 </ul>

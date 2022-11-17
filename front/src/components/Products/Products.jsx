@@ -14,8 +14,7 @@ const Products = () => {
                         <div className='card p-4 rounded'>
                             <img className='card-img-top mx-auto' src={product.img} alt={product.name}></img>
                             <div className='-body d-flex flex-column'>
-                                <h5 id="titulo_producto">
-                                </h5>
+                                <h5 id="titulo_producto"> {product.name} </h5>
                                 <div className='rating mt-auto'>
                                     <div className='rating-outer'>
                                         <div className='rating-inner'></div>

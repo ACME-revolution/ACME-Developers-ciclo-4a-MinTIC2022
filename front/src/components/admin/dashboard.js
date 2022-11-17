@@ -11,7 +11,7 @@ export const Dashboard = () => {
                 <Sidebar></Sidebar>
             </div>
             <div className="col-12 col-md-10">
-                    <h1 className="my-4">Dashboard</h1>
+                    <h1 className="my-4" id="TitleDashBoard">Dashboard</h1>
 
                         <Fragment>
                             <MetaData title={'Administracion'} />
@@ -33,7 +33,7 @@ export const Dashboard = () => {
                                         <div className="card-body">
                                             <div className="text-center card-font-size">Productos<br /> <b>123</b></div>
                                         </div>
-                                        <Link className="card-footer text-white clearfix small z-1" to="/admin/products">
+                                        <Link className="card-footer text-white clearfix small z-1" to="/admin/ModificarElementos">
                                             <span className="float-left">Ver Detalles</span>
                                             <span className="float-right">
                                                 <i className="fa fa-angle-right"></i>
