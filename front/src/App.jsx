@@ -15,6 +15,7 @@ import { CartProvider } from './Context/CartContext';
 import { Dashboard } from './components/admin/dashboard';
 import ProductsListAdmin from './components/admin/productList';
 import Login from './components/Usuario/Login';
+import CrearUsuarios from './components/admin/CrearUsuarios';
 
 //Componentes administrador
 
@@ -30,6 +31,7 @@ function App() {
             <Route path='/admin/AgregarProductos' element={<AddProductos />}/>
             <Route path='/admin/dashboard' element={<Dashboard />}></Route>
             <Route path='/admin/ModificarElementos' element={<ProductsListAdmin />}></Route>
+            <Route path='/admin/CrearUsuarios' element={<CrearUsuarios />}></Route>
 
             <Route path='ListaArticulos' element={<ListaArticulos/>}/>
             <Route path='Articulo/:id' element={<DetalleArticulo />}/>

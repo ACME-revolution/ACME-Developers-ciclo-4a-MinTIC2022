@@ -31,7 +31,7 @@ const ProductsListAdmin = () => {
                                                     </div>
                                                     <span id="No_de_opiniones"> {product.reviews} reviews</span>
                                                 </div>
-                                                <span className='TotalStock'> {product.stock} unidades</span>
+                                                <p className='stock'>{product.amount} ítems disponibles</p>
                                                 <p className='card-text'>${product.price} COP</p>
                                                 <button id="view_btn" className='btn btn-block'>
                                                     Modificar producto

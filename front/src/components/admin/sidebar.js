@@ -29,7 +29,7 @@ const Sidebar = () => {
                     </li>
 
                     <li>
-                        <Link to="/admin/users"><i className="fa fa-users"></i> Usuarios</Link>
+                        <Link to="/admin/CrearUsuarios"><i className="fa fa-users"></i> Crear usuarios</Link>
                     </li>
 
                     <li>

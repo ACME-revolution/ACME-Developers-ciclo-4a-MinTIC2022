@@ -6,8 +6,7 @@ export const ProductData = [
         reviews: 5,
         price: 72000,
         img: "https://ep01.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438621069_sumario_normal.jpg",
-        amount: 0,
-        stock:10,
+        amount: 10,
     },
     { 
         id: 2, 
@@ -16,8 +15,7 @@ export const ProductData = [
         reviews: 2, 
         price: 72000, 
         img: "https://ep01.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438621011_sumario_normal.jpg", 
-        amount: 0,
-        stock:10,
+        amount: 10,
     }, 
     { 
         id: 3, 
@@ -26,8 +24,7 @@ export const ProductData = [
         reviews: 12, 
         price: 20000, 
         img: "https://ep01.epimg.net/verne/imagenes/2015/07/31/articulo/1438353048_228377_1438621036_sumario_normal.jpg", 
-        amount: 0, 
-        stock:10,
+        amount: 10, 
     }, 
     { 
         id: 4, 
@@ -36,7 +33,6 @@ export const ProductData = [
         reviews: 7, 
         price: 15000, 
         img: "https://pbs.twimg.com/media/CROpULmWUAAowUu.png", 
-        amount: 0,
-        stock:10,
+        amount: 10,
     }
 ]
