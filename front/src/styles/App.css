@@ -22,6 +22,7 @@ body {
 
 
 .container-products-home{
+  margin-top: 30px;
   display: flex;
   justify-content:center;
   width: auto;
@@ -32,68 +33,53 @@ body {
 
 
 nav {
-  justify-items: center;
-  display: flex;
-  width: auto;
   background-color: #C72D29;
-  padding: 1rem 1rem;
+  padding: 1.5em 5%;
+  color: #fff;
 
+  display: grid;
+  gap: 1.5em;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit,minmax(300px 1fr));
 }
 
-.navbar-brand {
-  position: relative;
-  display: flex;
-  justify-items: center;
+.nav_title{
+margin: 0 auto;
 }
 
-.navegation {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.navegation li {
+.nav_list {
+  padding: 0;
   list-style: none;
-  margin: 0 20px;
+  margin: 0 auto;
+
+  display: grid;
+  justify-content: end;
+  grid-auto-flow: column;
+  gap: 5px;
 }
 
-.navegation li a {
-  color: #C72D29;
-  text-decoration: none;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-
-.navegation li:hover a {
-  color: #07B2D9;
+.nav_item1 {
+  display: grid;
+  justify-content: center;
+  grid-auto-flow: column;
 }
 
 /* barra de búsqueda */
 .input-group {
-  display: flex;
-  width: 80%;
-  margin-right: 30%;
-
+  width: 300px;
 }
 
 /* dimensiones barra de búsqueda */
 #search_field {
-  top: 0;
-  left: 0;
-  width: auto;
-  height: 1.4rem;
+  height: 2.4rem;
   padding: 1rem;
-  border-radius: 0.3rem;
+  border-radius: 0.6rem;
 }
 
 
 /* botón iniciar sesión*/
 #login_btn {
-  display: flex;
-  align-items: flex-end;
-  margin-right: 110px;
   background-color: #07B2D9;
-  padding: 8px 15px;
   font-weight: bold;
   color: #fff;
   cursor: pointer;
@@ -203,6 +189,7 @@ footer {
 }
 
 .sub-headding {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   color: #A63C4F;
@@ -318,7 +305,7 @@ footer {
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  margin-top: -605px;
+  margin-top: -565px;
   margin-right: 40px;
 }
 
@@ -502,11 +489,12 @@ footer {
   display: flex;
   width: auto;
   align-items: stretch;
-  min-height: 100vh;
+  min-height: 70vh;
   font-weight: normal;
   height: 100%;
   z-index: 10;
-  margin-top: -120px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #sidebar {
@@ -514,11 +502,9 @@ footer {
   max-width: 100%;
   background: #C72D29;
   color: #fff;
+  margin-top: -2px;
 }
 
-#sidebar ul {
-  margin-top: 220px;
-}
 
 #sidebar ul li a {
   padding: 5px;

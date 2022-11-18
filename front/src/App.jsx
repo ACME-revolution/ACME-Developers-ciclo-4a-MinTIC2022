@@ -14,6 +14,7 @@ import Products from './components/Products/Products';
 import { CartProvider } from './Context/CartContext';
 import { Dashboard } from './components/admin/dashboard';
 import ProductsListAdmin from './components/admin/productList';
+import Login from './components/Usuario/Login';
 
 //Componentes administrador
 
@@ -34,6 +35,7 @@ function App() {
             <Route path='Articulo/:id' element={<DetalleArticulo />}/>
             <Route path='Cart' element={<Cart />}/>
             <Route path='Products' element={<Products />}/>
+            <Route path='Login' element={<Login />}/>
           </Route>
         </Routes>
       </Router>
