@@ -24,6 +24,8 @@ const AddProductos = () => {
                         <section className='agregar' id='agregar'>
                             <form action="">
                                 <div className='inputBox'>
+                                    <span className='etiqueta'>Fecha de ingreso:</span>
+                                    <input className='cajon' type='date'></input>
                                     <span className='etiqueta'>Agregar imagen:</span>
                                     <input  accept="image/*" type="file" multiple></input>
                                     <span className='etiqueta'>Nombre del producto:</span>
@@ -34,6 +36,13 @@ const AddProductos = () => {
                                     <input className='cajon' type='number' placeholder='Escriba el precio unitario del producto'></input>
                                     <span className='etiqueta'>Stock:</span>
                                     <input className='cajon' type='number' placeholder='Total de ítems a almacenar'></input>
+                                    <span className='etiqueta'>Categoria:</span>
+                                    <select className='cajon'>
+                                        <option>Explosivos</option>
+                                        <option>Trampas</option>
+                                        <option>Armas</option>
+                                        <option>Venenos</option>
+                                    </select>
                                 </div>
                             </form>
                         </section>

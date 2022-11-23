@@ -33,6 +33,11 @@ const CrearUsuarios = () => {
                                     <input className='cajon' type='text' placeholder='Escriba su número de celular'></input>
                                     <span className='etiqueta'>Dirección:</span>
                                     <input className='cajon' type='text' placeholder='Escriba su dirección de residencia'></input>
+                                    <span className='etiqueta'>Rol:</span>
+                                    <select className='cajon'>
+                                        <option>Administrador</option>
+                                        <option>Usuario general</option>
+                                    </select>
                                 </div>
                             </form>
                         </section>

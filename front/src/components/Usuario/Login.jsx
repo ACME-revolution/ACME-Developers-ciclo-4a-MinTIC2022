@@ -3,6 +3,20 @@ import { Link } from 'react-router-dom';
 
 
 export const Login = () => {
+    const ingresar = () => {
+        var email, password
+        email = document.getElementById("email_field").value;
+        password = document.getElementById("password_field").value;
+
+        if (email == "admin" && password == "admin") {
+            window.location = "/admin/dashboard"
+        } else if (email == "user" && password == "user") {
+            window.location = "/"
+        } else {
+            alert('Datos incorrectos, intente nuevamente');
+        }
+
+    }
 
     return (
         <Fragment>
@@ -21,7 +35,7 @@ export const Login = () => {
             </section>
 
             <section className='btn-add-product'>
-                <Link Link to="/admin/dashboard" className='btn' id="view_btn">Iniciar sesión</Link>
+                <Link className='btn' id="view_btn" onClick={ingresar} >Iniciar sesión</Link>
             </section>
         </Fragment>
     )

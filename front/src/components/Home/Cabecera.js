@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 const Cabecera = () => {
+
     const [numeroItemsCarrito, setNumeroItemsCarrito] = useState(0);
     return (
         <Fragment>
@@ -24,7 +25,7 @@ const Cabecera = () => {
                             </button>
                         </li>
 
-                        <li className="nav_item">
+                        {/* <li className="nav_item">
                             <div className="ml-4 dropdown d-inline">
                                 <Link to="#!" className="btn dropdown-toggle text-white mr-4" type="button"
                                     id="dropDownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -36,7 +37,7 @@ const Cabecera = () => {
                                     <Link className="dropdown-item" to="/">Cerrar Sesion</Link>
                                 </div>
                             </div>
-                        </li>
+                        </li> */}
 
                         <li className="nav_item">
                             <Link Link to="/Login" className='btn' id="login_btn">Iniciar sesión</Link>
