@@ -8,9 +8,9 @@ export const Login = () => {
         email = document.getElementById("email_field").value;
         password = document.getElementById("password_field").value;
 
-        if (email == "admin" && password == "admin") {
+        if (email == "admin@acme.com" && password == "admin") {
             window.location = "/admin/dashboard"
-        } else if (email == "user" && password == "user") {
+        } else if (email == "user@hotmail.com" && password == "user") {
             window.location = "/"
         } else {
             alert('Datos incorrectos, intente nuevamente');
