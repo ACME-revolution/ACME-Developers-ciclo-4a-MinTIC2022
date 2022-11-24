@@ -20,7 +20,7 @@ export const Dashboard = () => {
                                 <div className="col-xl-12 col-sm-12 mb-3">
                                     <div className="card text-white bg-primary o-hidden h-100">
                                         <div className="card-body">
-                                            <div className="text-center card-font-size">Monto Total<br /> <b>$2.000.000</b>
+                                            <div className="text-center card-font-size">Monto Total<br /> <b>$0</b>
                                             </div>
                                         </div>
                                     </div>
@@ -31,7 +31,7 @@ export const Dashboard = () => {
                                 <div className="col-xl-3 col-sm-6 mb-3">
                                     <div className="card text-white bg-success o-hidden h-100">
                                         <div className="card-body">
-                                            <div className="text-center card-font-size">Productos<br /> <b>123</b></div>
+                                            <div className="text-center card-font-size">Productos<br /> <b>4</b></div>
                                         </div>
                                         <Link className="card-footer text-white clearfix small z-1" to="/admin/ModificarElementos">
                                             <span className="float-left">Ver Detalles</span>
@@ -46,9 +46,9 @@ export const Dashboard = () => {
                                 <div className="col-xl-3 col-sm-6 mb-3">
                                     <div className="card text-white bg-danger o-hidden h-100">
                                         <div className="card-body">
-                                            <div className="text-center card-font-size">Pedidos<br /> <b>34</b></div>
+                                            <div className="text-center card-font-size">Pedidos<br /> <b>2</b></div>
                                         </div>
-                                        <Link className="card-footer text-white clearfix small z-1" to="/admin/orders">
+                                        <Link className="card-footer text-white clearfix small z-1" to="/admin/Pedidos">
                                             <span className="float-left">Ver Detalles</span>
                                             <span className="float-right">
                                                 <i className="fa fa-angle-right"></i>
@@ -61,9 +61,9 @@ export const Dashboard = () => {
                                 <div className="col-xl-3 col-sm-6 mb-3">
                                     <div className="card text-white bg-info o-hidden h-100">
                                         <div className="card-body">
-                                            <div className="text-center card-font-size">Usuarios<br /> <b>12</b></div>
+                                            <div className="text-center card-font-size">Usuarios<br /> <b>2</b></div>
                                         </div>
-                                        <Link className="card-footer text-white clearfix small z-1" to="/admin/users">
+                                        <Link className="card-footer text-white clearfix small z-1" to='/admin/UsuariosRegistrados'>
                                             <span className="float-left">Ver Detalles</span>
                                             <span className="float-right">
                                                 <i className="fa fa-angle-right"></i>
@@ -76,7 +76,7 @@ export const Dashboard = () => {
                                 <div className="col-xl-3 col-sm-6 mb-3">
                                     <div className="card text-white bg-warning o-hidden h-100">
                                         <div className="card-body">
-                                            <div className="text-center card-font-size">Agotados<br /> <b>20</b></div>
+                                            <div className="text-center card-font-size">Agotados<br /> <b>0</b></div>
                                         </div>
                                         <Link className="card-footer text-white clearfix small z-1" to="/admin/agotados">
                                             <span className="float-left">Ver Detalles</span>

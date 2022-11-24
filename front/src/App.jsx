@@ -16,6 +16,8 @@ import { Dashboard } from './components/admin/dashboard';
 import ProductsListAdmin from './components/admin/productList';
 import Login from './components/Usuario/Login';
 import CrearUsuarios from './components/admin/CrearUsuarios';
+import Users from '../src/components/admin/Users';
+import Pedidos from './components/admin/pedidos';
 
 //Componentes administrador
 
@@ -32,6 +34,8 @@ function App() {
             <Route path='/admin/dashboard' element={<Dashboard />}></Route>
             <Route path='/admin/ModificarElementos' element={<ProductsListAdmin />}></Route>
             <Route path='/admin/CrearUsuarios' element={<CrearUsuarios />}></Route>
+            <Route path='/admin/UsuariosRegistrados' element={<Users />}></Route>
+            <Route path='/admin/Pedidos' element={<Pedidos />}></Route>
 
             <Route path='ListaArticulos' element={<ListaArticulos/>}/>
             <Route path='Articulo/:id' element={<DetalleArticulo />}/>

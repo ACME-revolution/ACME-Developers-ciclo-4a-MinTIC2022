@@ -25,7 +25,7 @@ const Sidebar = () => {
                     </li>
 
                     <li>
-                        <Link to="/admin/orders"><i className="fa fa-shopping-basket"></i> Pedidos</Link>
+                        <Link to="/admin/Pedidos"><i className="fa fa-shopping-basket"></i> Pedidos</Link>
                     </li>
 
                     <li>
