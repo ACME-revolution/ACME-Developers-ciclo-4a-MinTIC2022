@@ -6,11 +6,8 @@ import {
 const router = express.Router();
 
 // Rutas Gestión Producto
-router.get('/get', getProducts);
-router.get('/get/:id', getByIdProduct);
-router.post('/AddProducto', newProducts);
-router.put('/update/:id', updateProduct);
-router.delete('/delete/:id', deleteProduct);
+router.route("/products").get(getProducts)//establecemos la ruta para listar los productos
+router.route('/admin/producto/nuevo').post(newProducts); //establecemos la ruta para que el admin edite un producto. Este se crea como funcion porque nos estaba saliendo un error a diferencia de los routes de arriba
 
 
 export default router;

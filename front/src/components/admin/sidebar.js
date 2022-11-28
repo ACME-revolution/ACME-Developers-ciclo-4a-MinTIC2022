@@ -21,7 +21,7 @@ const Sidebar = () => {
                     </li>
 
                     <li>
-                        <Link to="/admin/AgregarProductos"><i className="fa fa-plus-square"></i> Agregar productos </Link>
+                        <Link to="/admin/agregarProductos"><i className="fa fa-plus-square"></i> Agregar productos </Link>
                     </li>
 
                     <li>

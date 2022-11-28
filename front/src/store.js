@@ -9,14 +9,14 @@
 import {createStore, combineReducers, applyMiddleware} from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
-import {productsReducer, productDetailsReducer} from './reducer/productReducer';
+import {productsReducer, newProductReducer} from './reducer/productReducer';
 
 //Reducers
 const reducer= combineReducers({
     //1. nuestro primer reductor funcionando
     products:productsReducer,//los productos van a ser iguales a los que se consiga en productsReducer
     //2. segundo reductor funcionando
-    productDetails:productDetailsReducer//el producto detalle será igual al que se consiga en productsReducer
+    newProduct: newProductReducer //el producto a crear va a ser igual a lo que se consiga en productReducer.js
 })
 let initialState = {} //indicamos un estado inicial
 

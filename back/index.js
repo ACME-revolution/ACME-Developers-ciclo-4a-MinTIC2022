@@ -6,8 +6,11 @@ import fileupload from 'express-fileupload';
 
 import conectarDB from "./config/db.js"; //importar todas las funciones necesarias
 import usuarioRoutes from "./routes/usuarioRoutes.js"; //importar todas las funciones necesarias
-import productoRoutes from "./routes/productoRoutes.js"; //importar todas las funciones necesarias
-import ventaRoutes from "./routes/ventaRoutes.js"; //importar todas las funciones necesarias
+
+import ordersRoutes from "./routes/orders"; //importar todas las funciones necesarias
+import products from "./routes/productoRoutes.js"//importamos la ruta de los productos
+//import errorMiddleware from "./middleware/errors.js"//usamos acá nuestro atrapador de errores
+
 
 dotenv.config(); //para aceptar variables de entorno
 
@@ -40,14 +43,16 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Gestion de usuarios (rutas)
-app.use("/api/usuarios", usuarioRoutes);
+app.use("/api/", usuarioRoutes);
 
 // Gestion de productos (rutas)
-app.use("/AcmeStore/Productos", productoRoutes);
+app.use("/api", products)//ruta en el navegador, tomará en cuenta las rutas de los products
 
 // Gestion de ventas (rutas)
-app.use("/api/ventas", ventaRoutes);
+app.use("/api/", ordersRoutes);
 
+//Middleware para manejar errores:
+//app.use(errorMiddleware)
 
 app.listen(PORT, () => {
     console.log(`Servidor funcionando en el puerto ${PORT} `);
